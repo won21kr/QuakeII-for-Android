@@ -352,8 +352,6 @@ void RenderFrame()
 
 int main (int argc, char **argv)
 {
-	int 	time, oldtime, newtime;
-
 	// go back to real user for config loads
 	saved_euid = geteuid();
 	seteuid(getuid());
@@ -368,10 +366,12 @@ int main (int argc, char **argv)
 //		printf ("Linux Quake -- Version %0.3f\n", LINUX_VERSION);
 	}
 
-    oldtime = Sys_Milliseconds ();
+
 
 // Use the main render loop?	
 #ifdef RENDERLOOP
+	int 	time, oldtime, newtime;
+    oldtime = Sys_Milliseconds ();
     while (1)
     {
 // find time spent rendering last frame
