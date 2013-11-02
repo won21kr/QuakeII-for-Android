@@ -1,10 +1,6 @@
 package com.opengl;
 
 import quake.jni.Natives;
-import android.app.Activity;
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.util.Log;
 import android.view.KeyEvent;
 
